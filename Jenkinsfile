@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Install") {
             steps {
-              bat 'npm install -g pnpm'
+              // bat 'npm install -g pnpm'
               bat 'pnpm i'
               echo 'install success'
             }
