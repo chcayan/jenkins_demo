@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage("Install") {
             steps {
+              bat 'npx pnpm install'
               bat 'pnpm i'
               echo 'install success'
             }
